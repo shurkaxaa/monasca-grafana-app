@@ -17,6 +17,7 @@
 import {AlarmDefinitionsPageCtrl} from './components/alarm_definitions';
 import {OverviewPageCtrl} from './components/overview';
 import {AlarmsPageCtrl} from './components/alarms';
+import {RaisedAlarmsPageCtrl} from './components/raised_alarms'
 import {NotificationsPageCtrl} from './components/notifications';
 import {EditNotificationPageCtrl} from './components/edit_notification';
 import {EditAlarmDefinitionPageCtrl} from './components/edit_alarm_definition';
@@ -29,5 +30,6 @@ export {
   EditNotificationPageCtrl,
   AlarmDefinitionsPageCtrl,
   EditAlarmDefinitionPageCtrl,
-  AlarmsPageCtrl
+  AlarmsPageCtrl,
+  RaisedAlarmsPageCtrl
 };

@@ -60,6 +60,13 @@
     },
     {
       "type": "page",
+      "name": "Raised Alarms",
+      "component": "RaisedAlarmsPageCtrl",
+      "role": "Viewer",
+      "addToNav": true
+    },
+    {
+      "type": "page",
       "name": "Edit Notification",
       "component": "EditNotificationPageCtrl",
       "role": "Viewer",

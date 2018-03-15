@@ -45,13 +45,16 @@ export default class MonascaClient {
   
   // Alarms
   
-  listAlarms(dimensions) {
+  listAlarms(dimensions, state) {
     var params = {};
     if (dimensions) {
       params.metric_dimensions =
 	dimensions
 	.map(d => d.key + ':' + d.value)
 	.join(',');
+    }
+    if (state) {
+        params.state = state;
     }
     return this._get('/v2.0/alarms/', params)
       .then(resp => resp.data.elements)

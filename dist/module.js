@@ -1,9 +1,9 @@
 'use strict';
 
-System.register(['./components/alarm_definitions', './components/overview', './components/alarms', './components/notifications', './components/edit_notification', './components/edit_alarm_definition', './components/config'], function (_export, _context) {
+System.register(['./components/alarm_definitions', './components/overview', './components/alarms', './components/raised_alarms', './components/notifications', './components/edit_notification', './components/edit_alarm_definition', './components/config'], function (_export, _context) {
   "use strict";
 
-  var AlarmDefinitionsPageCtrl, OverviewPageCtrl, AlarmsPageCtrl, NotificationsPageCtrl, EditNotificationPageCtrl, EditAlarmDefinitionPageCtrl, MonascaAppConfigCtrl;
+  var AlarmDefinitionsPageCtrl, OverviewPageCtrl, AlarmsPageCtrl, RaisedAlarmsPageCtrl, NotificationsPageCtrl, EditNotificationPageCtrl, EditAlarmDefinitionPageCtrl, MonascaAppConfigCtrl;
   return {
     setters: [function (_componentsAlarm_definitions) {
       AlarmDefinitionsPageCtrl = _componentsAlarm_definitions.AlarmDefinitionsPageCtrl;
@@ -11,6 +11,8 @@ System.register(['./components/alarm_definitions', './components/overview', './c
       OverviewPageCtrl = _componentsOverview.OverviewPageCtrl;
     }, function (_componentsAlarms) {
       AlarmsPageCtrl = _componentsAlarms.AlarmsPageCtrl;
+    }, function (_componentsRaised_alarms) {
+      RaisedAlarmsPageCtrl = _componentsRaised_alarms.RaisedAlarmsPageCtrl;
     }, function (_componentsNotifications) {
       NotificationsPageCtrl = _componentsNotifications.NotificationsPageCtrl;
     }, function (_componentsEdit_notification) {
@@ -34,6 +36,8 @@ System.register(['./components/alarm_definitions', './components/overview', './c
       _export('EditAlarmDefinitionPageCtrl', EditAlarmDefinitionPageCtrl);
 
       _export('AlarmsPageCtrl', AlarmsPageCtrl);
+
+      _export('RaisedAlarmsPageCtrl', RaisedAlarmsPageCtrl);
     }
   };
 });
